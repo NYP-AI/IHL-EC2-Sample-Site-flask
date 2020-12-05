@@ -9,7 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-
+            // Change the link with S3 link
+            link = ""
+            $('#img').attr("src", link)
+    }); 
     // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {
 
@@ -77,7 +80,7 @@
                     </p>
                 </div>
                 <div class="column has-text-right">
-                    <img src="static/logo.jpeg" style="height: 20rem">
+                    <img id="img" src="static/logo.jpeg" style="height: 20rem">
                 </div>
             </div>
         </div>
